@@ -10,11 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private var tableView = UITableView()
+    var articles: [ArticleEntity] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        title = "Latest Articles"
+        
+        setUpTableView: do {
+            tableView.frame = view.frame
+            tableView.dataSource = self as UITableViewDataSource
+            view.addSubview(tableView)
+        }
+        
+        ArticleModel.fetchArticleViaAlamofire(completion: {(articles) in
+            self.articles = articles
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        })
     }
-
-
 }
-
