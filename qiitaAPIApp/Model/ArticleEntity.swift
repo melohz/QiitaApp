@@ -10,8 +10,18 @@ import Foundation
 
 struct ArticleEntity: Codable {
     var title: String
+    var updatedAt: String
+    var articleBody: String
     var user: User
+    var url: String
     struct User: Codable {
         var id: String
+        var name: String
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case title, user, url
+        case updatedAt = "updated_at"
+        case articleBody = "rendered_body"
     }
 }

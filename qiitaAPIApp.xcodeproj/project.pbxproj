@@ -10,6 +10,7 @@
 		1AC8A9A1C54E702826E782DC /* Pods_qiitaAPIAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6FFD53602C185D8395954F /* Pods_qiitaAPIAppTests.framework */; };
 		41C8AAC0240B5265735668B1 /* Pods_qiitaAPIAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5AC9D7FB3AC19B7FF2B218A /* Pods_qiitaAPIAppUITests.framework */; };
 		5C7A9D5423CB583600D7E99E /* ArticleDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7A9D5323CB583600D7E99E /* ArticleDetail.storyboard */; };
+		5C7A9D5623CB5A0C00D7E99E /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7A9D5523CB5A0C00D7E99E /* ArticleDetailViewController.swift */; };
 		5CA3633A22E5DEC400EB8C8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3633922E5DEC400EB8C8F /* AppDelegate.swift */; };
 		5CA3633C22E5DEC400EB8C8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3633B22E5DEC400EB8C8F /* ViewController.swift */; };
 		5CA3633F22E5DEC400EB8C8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA3633D22E5DEC400EB8C8F /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		39D5A2087AA889A0E0E6668A /* Pods-qiitaAPIApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qiitaAPIApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-qiitaAPIApp/Pods-qiitaAPIApp.release.xcconfig"; sourceTree = "<group>"; };
 		4AAC6DC51675599292861C5F /* Pods-qiitaAPIAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qiitaAPIAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-qiitaAPIAppUITests/Pods-qiitaAPIAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5C7A9D5323CB583600D7E99E /* ArticleDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleDetail.storyboard; sourceTree = "<group>"; };
+		5C7A9D5523CB5A0C00D7E99E /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		5CA3633622E5DEC400EB8C8F /* qiitaAPIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qiitaAPIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA3633922E5DEC400EB8C8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CA3633B22E5DEC400EB8C8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				5CA3633D22E5DEC400EB8C8F /* Main.storyboard */,
 				5CA3634022E5DEC500EB8C8F /* Assets.xcassets */,
 				5C7A9D5323CB583600D7E99E /* ArticleDetail.storyboard */,
+				5C7A9D5523CB5A0C00D7E99E /* ArticleDetailViewController.swift */,
 				5CA3636E22E5E5B600EB8C8F /* Extension */,
 				5CA3636D22E5E5AA00EB8C8F /* Model */,
 				5CA3634222E5DEC500EB8C8F /* LaunchScreen.storyboard */,
@@ -406,6 +409,7 @@
 			files = (
 				5CA3637222E5E72800EB8C8F /* ArticleEntity.swift in Sources */,
 				5CA3633C22E5DEC400EB8C8F /* ViewController.swift in Sources */,
+				5C7A9D5623CB5A0C00D7E99E /* ArticleDetailViewController.swift in Sources */,
 				5CA3636C22E5E57100EB8C8F /* ArticleModel.swift in Sources */,
 				5CA3637422E5ECFA00EB8C8F /* ViewController+tableView.swift in Sources */,
 				5CA3633A22E5DEC400EB8C8F /* AppDelegate.swift in Sources */,

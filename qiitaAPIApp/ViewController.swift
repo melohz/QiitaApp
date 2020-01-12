@@ -16,11 +16,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         title = "Latest Articles"
         
         setUpTableView: do {
             tableView.frame = view.frame
             tableView.dataSource = self as UITableViewDataSource
+            tableView.delegate = self
             view.addSubview(tableView)
         }
         
@@ -30,5 +32,23 @@ class ViewController: UIViewController {
                 self.tableView.reloadData()
             }
         })
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        let article = articles[indexPath.row]
+        print(article.updatedAt)
+        tableView.deselectRow(at: indexPath, animated: true)
+        let sb = UIStoryboard.init(name: "ArticleDetail", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "ArticleDetail") as! ArticleDetailViewController
+        
+        vc.titleString = article.title
+        vc.userName = article.user.name
+        vc.articleBody = article.articleBody
+        
+        self.present(vc, animated: true, completion: nil)
     }
 }
